@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typing-text-animation</title>
+</head>
+
+<body>
+    <div class="typing-text-animation-container">
+        <h1>Hello, I am Om Sharma and I do <span class="auto-type">Web Designing</span></h1>
+    </div>
+
+    <style>
+        .typing-text-animation-container {
+            width: 100%;
+            height: 100vh;
+            background: #2b0335;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .typing-text-animation-container h1 {
+            font-size: 80px;
+            font-weight: 600;
+        }
+
+        .typing-text-animation-container span {
+            color: #9bae07;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Coding", "Gaming", "Web Development", "Digital Marketing"],
+            typeSpeed: 70,
+            backSpeed: 70,
+            loop: true
+        })
+    </script>
+</body>
+
+</html>

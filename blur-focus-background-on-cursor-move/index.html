@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blury Background Animation Effect Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <div id="blur"></div>
+        <h1>Trek</h1>
+        <menu>
+            <ul>
+                <li><a href="#"><span style="color: orangered" style="font-size: 15px;">Home</span></a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">OurTeam</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </menu>
+        <div class="banner-box">
+            <h2>voyager</h2>
+            <p>The world is a book, and those who do not <br>
+                travel read only a page.</p>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var blur=document.getElementById("blur");
+        document.onmousemove=function(e){
+            blur.style.transform=`translate(${e.pageX}px,${e.pageY}px)`;
+        }
+    </script>
+</body>
+</html>

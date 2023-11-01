@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="frosted">
+        <h2>Frosted Glass</h2>
+        <div class="glass"></div>
+    </div>
+    <style>
+        #frosted {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url(../image-gallery/images/1.jpg);
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        #frosted h2 {
+            font-size: 5rem;
+            color: #fff;
+            pointer-events: none;
+            text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        #frosted .glass {
+            position: absolute;
+            pointer-events: none;
+            width: 300px;            transform: translate(-50%, -50%);
+
+            height: 200px;
+            box-shadow: rgba(0, 0, 0, 0.2);
+            background: transparent;
+            backdrop-filter: blur(10px);
+            transition: 0.2s;
+        }
+    </style>
+    <script>
+        document.addEventListener("mouseover", function(e){
+            const glass = document.querySelectorAll('.glass');
+            glass.style.left = e.offsetX + 'px';
+            glass.style.top = e.offsetY + 'px';
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+body {
+    font-family: sans-serif !important;
+    padding: 0%;
+    margin: 0%;
+}
+
+.banner {
+    background-image: url(banner-img1.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+#blur {
+    position: absolute;
+    width: 200%;
+    height: 200vh;
+    left: -100vw;
+    top: -100vh;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    z-index: 1;
+    -webkit-mask-image: radial-gradient(150px at 50% 50%,transparent 100%,black 100%);
+    mask-image: radial-gradient(150px at 50% 50%,transparent 100%,black 100%);
+mix-blend-mode: hue;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-left: 170px;
+    float: left;    position: absolute;
+    z-index: 2;
+
+}
+
+.banner h1:hover {
+    color: rgb(253, 77, 13);
+    transition: 0.4s;
+}
+
+menu {
+    padding-top: 20px;
+    margin-right: 150px;
+    font-size: 15px;
+    font-style: normal;
+    color: white;
+    height: 100px;     position: absolute;
+    z-index: 2;
+
+}
+
+menu ul {
+    float: right;
+}
+
+menu ul li {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+}
+
+menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+menu ul li a:hover {
+    color: orangered;
+    transition: 0.3s;
+}
+
+.banner-box {
+    height: 250px;
+    width: 500px;
+    border: 5px solid white;
+    margin-left: 30%;
+    margin-top: 100px;
+    border-radius: 5px;    position: absolute;
+z-index: 2;
+}
+
+.banner-box h2 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-family: sans-serif;
+}
+
+.banner-box p {
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 1.7;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}

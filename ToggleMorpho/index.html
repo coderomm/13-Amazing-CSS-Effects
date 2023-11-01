@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>morphWeb</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="morphWeb" class="morphWeb">
+        <header>
+            <a href="" class="logo">Water.</a>
+            <div class="toggle" onclick="menuToggle();"></div>
+        </header>
+        <div class="glass"></div>
+        <div class="cnt">
+            <h2>Hapiness...<br><span>Crystal Clear Ocean Water.</span></h2>
+        </div>
+        <video src="production ID_4010941.mp4" autoplay muted loop></video>
+        <ul class="sci">
+            <li style="--i:1"><a href="">Facebook</a></li>
+            <li style="--i:2"><a href="">Instagram</a></li>
+            <li style="--i:3"><a href="">Twitter</a></li>
+        </ul>
+        <ul class="navigation">
+            <li style="--i:1"><a href="">Home</a></li>
+            <li style="--i:1"><a href="">About</a></li>
+            <li style="--i:1"><a href="">Tour</a></li>
+            <li style="--i:1"><a href="">Contact</a></li>
+        </ul>
+    </section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.toggle');
+            const morphWeb = document.querySelector('.morphWeb');
+            toggleMenu.classList.toggle('active');
+            morphWeb.classList.toggle('active');
+
+        }
+    </script>
+</body>
+
+</html>

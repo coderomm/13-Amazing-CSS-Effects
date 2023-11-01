@@ -1,0 +1,218 @@
+#morphWeb {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#morphWeb header {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 40pxx 100px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#morphWeb header .logo {
+    position: relative;
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
+#morphWeb .toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#morphWeb .toggle.active {
+    background: url(close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 25px;
+}
+
+#morphWeb .toggle::before {
+    content: 'Menu';
+    position: absolute;
+    right: 45px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 14px;
+    padding: 2px 5px;
+    background: #fff;
+    color: #111;
+}
+
+#morphWeb .toggle.active::before {
+    content: 'Close';
+}
+
+#morphWeb video {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#morphWeb .glass {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 40%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    z-index: 1;
+    box-shadow: 10px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
+#morphWeb.active .glass {
+    width: 100%;
+    backdrop-filter: blur(20px);
+    transition-delay: 0s;
+    box-shadow: 10px 0px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+#morphWeb .cnt {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.3;
+}
+
+#morphWeb.active .cnt {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-200px);
+    transition-delay: 0s;
+
+}
+
+#morphWeb .cnt h2 {
+    position: relative;
+    color: #fff;
+    font-size: 8rem;
+    line-height: 0.55em;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#morphWeb .cnt h2 span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+    background: #fff;
+    color: #111;
+    padding: 0 10px;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+}
+
+#morphWeb .sci {
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+    display: flex;
+    z-index: 100;
+}
+
+#morphWeb .sci li {
+    list-style: none;
+    margin: 5px;
+    padding: 0 6px;
+    background: #fff;
+    transition: 0.5s;
+    transition-delay: calc(0.2s * var(--i));
+}
+
+#morphWeb.active .sci li {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
+}
+
+#morphWeb .sci li a {
+    color: #111;
+    font-size: 24px;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#morphWeb .navigation {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 100;
+}
+
+#morphWeb .navigation li {
+    list-style: none;
+    text-align: center;
+    margin: 15px 0px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(200px);
+    transition: 0.5s;
+    transition-delay: calc(0.2s * var(--i));
+}
+
+#morphWeb.active .navigation li {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+}
+
+#morphWeb .navigation li a {
+    color: #111;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    background: #ffff;
+    padding: 4px 10px;
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+#morphWeb .navigation li a:hover {
+    color: #111;
+    letter-spacing: 10px;
+    text-transform: lowercase;
+    background: #ffff;
+    transition: 0.5s;
+}
