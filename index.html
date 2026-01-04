@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>13 Amazing CSS Effects - Directory</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      color: white;
+      margin-bottom: 50px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    header p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    .effects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .effect-card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: #333;
+      display: block;
+    }
+
+    .effect-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .effect-card h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #667eea;
+    }
+
+    .effect-card p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .effect-number {
+      display: inline-block;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      color: white;
+      margin-top: 60px;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .effects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>🌟 13 Amazing CSS Effects</h1>
+      <p>Explore a collection of stunning CSS animation effects</p>
+    </header>
+
+    <div class="effects-grid">
+      <a href="3D-animated-product-card-carousel/index.html" class="effect-card">
+        <span class="effect-number">1</span>
+        <h2>3D Animated Product Card Carousel</h2>
+        <p>Interactive 3D product card with flip animation and carousel functionality.</p>
+      </a>
+
+      <a href="blur-focus-background-on-cursor-move/index.html" class="effect-card">
+        <span class="effect-number">2</span>
+        <h2>Blur Focus Background</h2>
+        <p>Dynamic blur effect that follows your cursor movement for an engaging experience.</p>
+      </a>
+
+      <a href="card-frosted-effect/index.html" class="effect-card">
+        <span class="effect-number">3</span>
+        <h2>Card Frosted Effect</h2>
+        <p>Beautiful frosted glass effect cards with gradient backgrounds and smooth animations.</p>
+      </a>
+
+      <a href="card-hovers/index.html" class="effect-card">
+        <span class="effect-number">4</span>
+        <h2>Card Hovers</h2>
+        <p>Multiple card hover effects with various animation styles and transitions.</p>
+      </a>
+
+      <a href="lightbox-image-gallery/index.html" class="effect-card">
+        <span class="effect-number">5</span>
+        <h2>Lightbox Image Gallery</h2>
+        <p>Responsive image gallery with lightbox functionality for viewing images in detail.</p>
+      </a>
+
+      <a href="onmousemove_cursor/index.html" class="effect-card">
+        <span class="effect-number">6</span>
+        <h2>On Mouse Move Cursor</h2>
+        <p>Custom cursor effect that responds to mouse movement and hover interactions.</p>
+      </a>
+
+      <a href="Overlay/index.html" class="effect-card">
+        <span class="effect-number">7</span>
+        <h2>Overlay</h2>
+        <p>Elegant overlay effects with fade-in animations and hover interactions.</p>
+      </a>
+
+      <a href="ratings/index.html" class="effect-card">
+        <span class="effect-number">8</span>
+        <h2>Ratings</h2>
+        <p>Interactive star rating component with smooth animations and visual feedback.</p>
+      </a>
+
+      <a href="registrationForm/index.html" class="effect-card">
+        <span class="effect-number">9</span>
+        <h2>Registration Form</h2>
+        <p>Beautiful animated registration form with modern design and smooth transitions.</p>
+      </a>
+
+      <a href="Sliced/sliced.html" class="effect-card">
+        <span class="effect-number">10</span>
+        <h2>Sliced Text</h2>
+        <p>Creative text slicing effect with gradient animations and clip-path techniques.</p>
+      </a>
+
+      <a href="TextAnimation/index.html" class="effect-card">
+        <span class="effect-number">11</span>
+        <h2>Text Animation</h2>
+        <p>Dynamic text animations with background effects and smooth transitions.</p>
+      </a>
+
+      <a href="ToggleMorpho/index.html" class="effect-card">
+        <span class="effect-number">12</span>
+        <h2>Toggle Morpho</h2>
+        <p>Morphing toggle menu with glassmorphism effects and video background.</p>
+      </a>
+
+      <a href="TypingText/index.html" class="effect-card">
+        <span class="effect-number">13</span>
+        <h2>Typing Text</h2>
+        <p>Animated typing text effect with multiple strings and loop functionality.</p>
+      </a>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 13 Amazing CSS Effects | All effects are open source</p>
+    </footer>
+  </div>
+</body>
+
+</html>
